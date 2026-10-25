@@ -1,0 +1,32 @@
+name: doc_helper
+description: "Scan a document and get a simple explanation, action steps, and scam warnings in your own language."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Camera / photo library (works on iPhone Safari via the file picker)
+  image_picker: ^1.1.2
+  # Calls our /api/analyze backend
+  http: ^1.2.2
+  # Read Aloud using the phone's built-in voices
+  flutter_tts: ^4.2.0
+  # Share results with family (WhatsApp, Messages, etc.)
+  share_plus: ^13.3.1
+  # Saves past results (never the photos) on the device
+  shared_preferences: ^2.3.3
+  cupertino_icons: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - asset/images/

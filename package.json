@@ -1,0 +1,12 @@
+{
+  "name": "doc-helper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI document helper: scan a document, get a simple explanation, action steps, and scam warnings in your language.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vercel dev"
+  }
+}
